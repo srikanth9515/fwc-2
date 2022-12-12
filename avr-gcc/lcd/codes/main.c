@@ -78,7 +78,7 @@ void LCD_Clear() // clear the LCD display
 
 void LCD_Message(const char *text) // display string on LCD
 {
- //while (*text) // do until /0 character
+ while (*text) // do until /0 character
  LCD_Char(*text++); // send char & update char pointer
 }
 
@@ -100,8 +100,17 @@ int main(void)
 
  while(1)
  {
- LCD_Clear();
- LCD_Integer(8);  // show counter 
-_delay_ms(600);     // set animation speed
+    LCD_Clear();
+    for(int j= 0 ; j <10 ; j++)
+    {
+ 	LCD_Integer(j);  // show counter 
+	_delay_ms(600);     // set animation speed
+    }  
+    LCD_Cmd(0xC1); //jump to second line position 1
+    _delay_ms(3); // wait for LCD to initialize
+    LCD_Message("Hello World");   
+	_delay_ms(600);     // set animation speed
+
+
 }
 }
