@@ -2,7 +2,7 @@
 ;to drive a seven segment display
 
 
-.include "/data/data/com.termux/files/home/m328Pdef.inc"
+.include "/home/satheeshsk/m328Pdef.inc"
 
 
   ldi r16,0 		;reset system status
