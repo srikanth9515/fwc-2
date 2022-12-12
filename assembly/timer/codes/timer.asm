@@ -1,4 +1,4 @@
-.include "/home/gadepall/m328Pdef.inc"
+.include "/home/satheeshsk/m328Pdef.inc"
 
 ;works as 1 second delay on arduino: 16 MHz (16x10^6)
 
