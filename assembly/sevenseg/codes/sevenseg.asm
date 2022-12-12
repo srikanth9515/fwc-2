@@ -2,7 +2,7 @@
 ;displaying number on
 ;seven segment display
 
-.include "/home/gadepall/m328Pdef.inc"
+.include "/home/satheeshsk/m328Pdef.inc"
 
   
 ;Configuring pins 2-7 (PD2-PD7) of Arduino
@@ -15,7 +15,7 @@
   out DDRB,r16
 ;Writing the number 2 on the 
 ;seven segment display
-  ldi r17,0b10010000
+  ldi r17,0b00000000
   out PortD,r17
   
   ldi r17,0b00000000
