@@ -1,7 +1,7 @@
 ;7447 decoder i/o
 
 
-.include "/home/gadepall/m328Pdef.inc"
+.include "/home/satheeshsk/m328Pdef.inc"
 
 	ldi r17, 0b11000011 ; identifying input pins 10,11,12,13
 	out DDRB,r17		; declaring pins as input
