@@ -1,14 +1,14 @@
 ;logical AND, OR and XOR operations
 ;output displayed using 7447 IC
 
-.include "/home/gadepall/m328Pdef.inc"
+.include "/home/satheeshsk/m328Pdef.inc"
 
 ldi r16, 0b00111100 ;identifying output pins 2,3,4,5
 out DDRD,r16		;declaring pins as output
 
 
 
-ldi r16,0b00000000	;initializing W
+ldi r16,0b00000010	;initializing W
 ldi r17,0b00000001	;initializing X
 ;logical AND
 ;and r16,r17		;W AND X
