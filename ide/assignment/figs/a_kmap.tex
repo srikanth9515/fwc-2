@@ -1,0 +1,13 @@
+\begin{karnaugh-map}[4][2][1][][]
+    \maxterms{0,2,3,7}
+    \minterms{1,4,5,6}
+    \implicantedge{1}{1}{5}{5}
+    \implicantedge{4}{4}{6}{6}
+    % note: posistion for start of \draw is (0, Y) where Y is
+    % the Y size(number of cells high) in this case Y=2
+    \draw[color=black, ultra thin] (0, 2) --
+    node [pos=0.7, above right, anchor=south west] {$KQ$} % Y label
+    node [pos=0.7, below left, anchor=north east] {$J$} % X label
+    ++(135:1);
+        
+    \end{karnaugh-map}
