@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.12.19)  19 DEC 2022 06:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.12.19)  19 DEC 2022 07:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -118,20 +118,20 @@ File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
 (./chap-7.aux)
 \openout1 = `chap-7.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -155,34 +155,79 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package ltshipout Info: Completed page discarded on input line 20.
+Package ltshipout Info: Completed page discarded on input line 15.
 
 
 LaTeX Warning: No \author given.
 
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 29.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 29.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 30.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 30.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 30.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 35.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 36.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 36.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 39.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 41.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 41.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 41.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 41.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 41.
+
 <./fig1.png, id=1, 111.5367pt x 81.906pt>
 File: ./fig1.png Graphic file (type png)
 <use ./fig1.png>
-Package pdftex.def Info: ./fig1.png  used on input line 58.
+Package pdftex.def Info: ./fig1.png  used on input line 54.
 (pdftex.def)             Requested size: 390.0pt x 286.4053pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 61.
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./fig1.png>]
 (./chap-7.aux) ) 
 Here is how much of TeX's memory you used:
- 1887 strings out of 481252
- 26596 string characters out of 5915887
- 304523 words of memory out of 5000000
- 18842 multiletter control sequences out of 15000+600000
+ 1886 strings out of 481252
+ 26590 string characters out of 5915887
+ 304502 words of memory out of 5000000
+ 18841 multiletter control sequences out of 15000+600000
  410255 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 68i,6n,74p,291b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,6n,74p,280b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on chap-7.pdf (2 pages, 55893 bytes).
+Output written on chap-7.pdf (2 pages, 56133 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream
