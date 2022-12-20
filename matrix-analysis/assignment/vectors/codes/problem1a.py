@@ -15,10 +15,6 @@ def line_gen(A,B):
      x_AB[:,i]= temp1.T
    return x_AB
 
-def dir_vec(A,B):
-   return B-A
-def norm_vec(A,B):
-   return np.matmul(omat, dir_vec(A,B))
 #Given points
 A = np.array(([2,3]))
 B = np.array(([-1,0]))
