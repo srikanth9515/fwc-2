@@ -11,10 +11,6 @@
 \usepackage{hyperref}
 \usepackage{booktabs}
 \usepackage{array}
-\let\vec\mathbf
-
-
-
 \usepackage{amsmath}   % for having text in math mode
 
 %Following 2 lines were added to remove the blank page at the beginning
@@ -23,11 +19,12 @@
 %
 
 
-
+%New macro definitions
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 \providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
 \providecommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\solution}{\noindent \textbf{Solution: }}
+\let\vec\mathbf
 
 \begin{document}
 
