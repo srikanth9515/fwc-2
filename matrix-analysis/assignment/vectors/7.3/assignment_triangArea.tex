@@ -1,0 +1,164 @@
+%\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+
+\begin{center}
+\title{\textbf{Area of a Traingle}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+
+\setcounter{page}{1}
+
+
+
+\section{10$^{th}$ Maths - Chapter 7}
+
+This is Problem-1 from Exercise 7.3
+
+\begin{enumerate}
+\item Find the area of the triangle whose vertices are :
+\begin{enumerate}
+\item $(2, 3), (–1, 0), (2, – 4)$  \\
+\solution Refer figure \ref{fig:Fig1} \\
+The area of the triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by  
+  \label{prop:area2d}
+  \begin{align}
+    \label{eq:area2d}
+	\frac{1}{2}\norm{\brak{\vec{A}-\vec{B}} \times \brak{\vec{A}-\vec{C}}} \\
+	 \vec{A}-\vec{B} =  \myvec{
+  2 \\
+  3 \\
+ } - \myvec{
+  -1 \\
+  0 \\
+ } = \myvec{
+ 3 \\
+ 3 \\
+ }
+ \\
+ \vec{A}-\vec{C} =  \myvec{
+  2 \\
+  3 \\
+ } - \myvec{
+  2 \\
+  -4 \\
+ } = \myvec{
+ 0 \\
+ 7 \\
+ }
+ \end{align}
+The value of the cross product of two vectors is given by
+\begin{align}
+  \label{eq:det2d}
+  \mydet{\vec{M}} &= \mydet{\vec{A} & \vec{B}} 
+  \\
+  &= \mydet{a_1 & b_1\\a_2 & b_2} = a_1b_2 - a_2 b_1
+\end{align}
+
+		Therefore, \eqref{eq:area2d} equals \\
+\begin{align}
+	\text{Area} &=	\frac{1}{2}\mydet{3 & 0\\3 & 7}  \\
+	&=	\frac{1}{2}\brak{21}  \\
+	&=10.5 \text{ Sq units}	       
+\end{align}
+
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/problem1a.pdf}
+	\end{center}
+\caption{}
+\label{fig:Fig1}
+\end{figure}
+
+\item $(–5, –1), (3, –5), (5, 2)$ \\ 
+\solution Refer figure \ref{fig:Fig2} \\
+The area of the triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by  
+  \label{prop:area2e}
+  \begin{align}
+    \label{eq:area2e}
+	\frac{1}{2}\norm{\brak{\vec{A}-\vec{B}} \times \brak{\vec{A}-\vec{C}}} \\
+	 \vec{A}-\vec{B} =  \myvec{
+  -5 \\
+  -1 \\
+ } - \myvec{
+  3 \\
+  -5 \\
+ } = \myvec{
+ -8 \\
+ 4 \\
+ }
+ \\
+ \vec{A}-\vec{C} =  \myvec{
+  -5 \\
+  -1 \\
+ } - \myvec{
+  5 \\
+  2 \\
+ } = \myvec{
+ -10 \\
+ -3 \\
+ }
+\end{align}
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/problem1b.pdf}
+	\end{center}
+\caption{}
+\label{fig:Fig2}
+\end{figure}
+
+The value of the cross product of two vectors is given by
+\begin{align}
+  \label{eq:det2e}
+  \mydet{\vec{M}} &= \mydet{\vec{A} & \vec{B}} 
+  \\
+  &= \mydet{a_1 & b_1\\a_2 & b_2} = a_1b_2 - a_2 b_1
+\end{align}
+		Therefore, \eqref{eq:area2e} equals \\
+\begin{align}
+\text{Area} &=	\frac{1}{2}\mydet{-8 & -10\\4 & -3}  \\
+	&=	\frac{1}{2}\brak{24+40}  \\
+	&=  \frac{1}{2}\brak{64}  \\ 
+	&=  32 \text{ Sq units}		       
+\end{align}
+
+\end{enumerate}
+
+
+
+\end{enumerate}
+
+\end{document}

@@ -88,7 +88,7 @@ plt.grid() # minor
 plt.axis('equal')
 plt.title('Rectangle')
 #if using termux
-plt.savefig('../figs/problem2.pdf')
+plt.savefig('../figs/problem1.pdf')
 #subprocess.run(shlex.split("termux-open '/storage/emulated/0/github/cbse-papers/2020/math/10/solutions/figs/matrix-10-2.pdf'")) 
 #else
 plt.show()
