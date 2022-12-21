@@ -6,11 +6,6 @@ from numpy import linalg as LA
 import subprocess
 import shlex
 
-#declare constants 
-ALLEQUAL        = 1
-OPPOSITEEQUAL   = 2
-FALSE           = 0
-TRUE            = 1
 
 def line_gen(A,B):
    len =10
@@ -34,7 +29,7 @@ Q = (B+C)/2
 R = (C+D)/2
 S = (D+A)/2
 
-#We know that the figure fomred by joining mid points of a quadrilateral is a parallelogram.
+#We know that the figure formed by joining mid points of a quadrilateral is a parallelogram.
 #To establish, if it is a rectangle, we will compute the dot product of any 2 adjacent sides
 #if the dot product is zero, then it is rectangle
 
