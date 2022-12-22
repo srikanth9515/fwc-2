@@ -57,13 +57,13 @@ x_SP = line_gen(S,P)
 #Plotting all lines
 plt.plot(x_AB[0,:],x_AB[1,:],label='$AB$')
 plt.plot(x_BC[0,:],x_BC[1,:],label='$BC$')
-plt.plot(x_CD[0,:],x_CD[1,:],label='$AC$')
-plt.plot(x_DA[0,:],x_DA[1,:],label='$AC$')
+plt.plot(x_CD[0,:],x_CD[1,:],label='$CD$')
+plt.plot(x_DA[0,:],x_DA[1,:],label='$AD$')
 
-plt.plot(x_PQ[0,:],x_PQ[1,:],label='$AB$')
-plt.plot(x_QR[0,:],x_QR[1,:],label='$BC$')
-plt.plot(x_RS[0,:],x_RS[1,:],label='$AC$')
-plt.plot(x_SP[0,:],x_SP[1,:],label='$AC$')
+plt.plot(x_PQ[0,:],x_PQ[1,:],label='$PQ$')
+plt.plot(x_QR[0,:],x_QR[1,:],label='$QR$')
+plt.plot(x_RS[0,:],x_RS[1,:],label='$RS$')
+plt.plot(x_SP[0,:],x_SP[1,:],label='$PS$')
 
 #Labeling the coordinates
 tri_coords = np.vstack((A,B,C,D,P,Q,R,S)).T
