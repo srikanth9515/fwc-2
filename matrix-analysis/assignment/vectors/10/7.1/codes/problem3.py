@@ -20,17 +20,15 @@ A = np.array(([1,5]))
 B = np.array(([2,3]))
 C = np.array(([-2,-11]))
 
-AB = B-A
-AC = C-A
+#Form the matrix with transposes of A,B,C
+mat = np.block([[A],[B], [C]])
 
-mat = np.block([[AB],[AC]])
+rankOfMatrix = np.linalg.matrix_rank(mat)
 
-rankOfMatrix = np.linalg.matrix_rank(mat.T)
-
-if(rankOfMatrix < 2):
-    print("The rank of [ (B-A C-A) ] matrix is ", rankOfMatrix, ". Hence the points are collinear")
+if(rankOfMatrix == 1):
+    print("The rank of the  matrix is ", rankOfMatrix, ". Hence the points are collinear")
 else:
-    print("The rank of [ (B-A C-A) ] matrix is ", rankOfMatrix, ". Hence the points are not collinear")
+    print("The rank of the matrix is ", rankOfMatrix, ". Hence the points are not collinear")
 
 
 
