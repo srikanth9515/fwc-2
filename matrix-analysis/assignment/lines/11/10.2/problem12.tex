@@ -46,40 +46,48 @@ This is Problem-12 from Exercise 10.2
 \solution 
 Let $\vec{P}(a,0), \text{ and } \vec{Q}(0,a)$ be the 2 points on x and y-axes respectively having $a$ as the intercept on both the axes. We know that the the direction vector $\vec{m}$ of the line joining two points $\vec{P}, \vec{Q}$ is given by  
 \begin{align}
-\label{eq:1}
 \vec{m} &=   \vec{P} - \vec{Q} \\
         &=   \myvec{
 		a \\
-		0 \\
+		0 
 		} - \myvec{
 		   0 \\
-		   a\\
+		   a
 		}  = a\myvec{ 
                      1 \\
-		   -1 \\
+		   -1 
         		}  \equiv \myvec{
                            1 \\
-			   -1 \\
+			   -1 
 		         } 
 \end{align}
 $\implies$ The normal vector $\vec{n}$ to the line is given as
 \begin{align}
 \vec{n} &=  \myvec{
 		     1 \\
-		     1\\
+		     1
 	     } 
 \end{align}
 The equation of a line with normal vector $\vec{n}$ and passing through a point $\vec{A}(2,3)$ is given by
 \begin{align}
 	\vec{n}^\top\brak{\vec{x}-\vec{A}} &= 0 \\
 	\myvec { 1 & 1 } \brak{ \vec{ x  - \myvec{ 2 \\
-                                   3 \\
+                                   3
 			     }
 		}}  &= 0  \\
 	\myvec{ 1 & 1} \vec{x} -5 &= 0 \\
+        \label{eq:1}
 	\myvec{ 1 & 1} \vec{x}  &= 5 
 \end{align}
-The line segment is as shown in Figure \ref{fig:Fig1}
+To find the intercepts, we know that, since $\vec{P} \text{ and } \vec{Q}$ lie on the straight line, they should satisfy the equation \ref{eq:1}.
+\begin{align}
+	\myvec{ 1 & 1} \vec{P}  &= 5 \\
+	\myvec{ 1 & 1} \myvec{a \\
+	                      0 }  &= 5 \\ 
+	a + 0 &= 5 \\
+	a &= 5 
+\end{align}
+Both $\vec{P} \text{ and } \vec{Q}$ have the same intercept value, hence the intercept on both x and y-axes is 5 units. The line segment is as shown in Figure \ref{fig:Fig1}.
 \begin{figure}[!h]
 	\begin{center}
 		\includegraphics[width=\columnwidth]{./figs/problem12.pdf}
