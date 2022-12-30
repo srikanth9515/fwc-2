@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.12.26)  30 DEC 2022 06:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.12.26)  30 DEC 2022 08:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**problem3.tex
-(./problem3.tex
+**sat.tex
+(./sat.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-01-09> xparse <2020-03-03>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -352,27 +352,26 @@ File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count289
 \l__pdf_internal_box=\box53
 )
-(./problem3.aux)
-\openout1 = `problem3.aux'.
+(./sat.aux)
+\openout1 = `sat.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count290
 \scratchdimen=\dimen181
@@ -398,7 +397,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -411,22 +410,22 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count297
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
-(./problem3.out) (./problem3.out)
+(./sat.out) (./sat.out)
 \@outlinefile=\write3
-\openout3 = `problem3.out'.
+\openout3 = `sat.out'.
 
-Package ltshipout Info: Completed page discarded on input line 41.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+Package ltshipout Info: Completed page discarded on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -437,34 +436,34 @@ LaTeX Warning: No \author given.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 44.
+(hyperref)                removing `math shift' on input line 46.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 44.
+(hyperref)                removing `superscript' on input line 46.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 44.
+(hyperref)                removing `math shift' on input line 46.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<./figs/problem3.pdf, id=40, 462.52798pt x 346.89601pt>
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<./figs/problem3.pdf, id=67, 462.52798pt x 346.89601pt>
 File: ./figs/problem3.pdf Graphic file (type pdf)
 <use ./figs/problem3.pdf>
-Package pdftex.def Info: ./figs/problem3.pdf  used on input line 128.
+Package pdftex.def Info: ./figs/problem3.pdf  used on input line 147.
 (pdftex.def)             Requested size: 390.0pt x 292.51282pt.
- [2] [3 <./figs/problem3.pdf>] (./problem3.aux)
-Package rerunfilecheck Info: File `problem3.out' has not changed.
+ [3 <./figs/problem3.pdf>] (./sat.aux)
+Package rerunfilecheck Info: File `sat.out' has not changed.
 (rerunfilecheck)             Checksum: E8524D831B853768E5E2E9F58C56C66F;58.
  ) 
 Here is how much of TeX's memory you used:
- 9799 strings out of 479304
- 149560 string characters out of 5869778
- 485189 words of memory out of 5000000
- 26808 multiletter control sequences out of 15000+600000
+ 9801 strings out of 479304
+ 149506 string characters out of 5869778
+ 492235 words of memory out of 5000000
+ 26809 multiletter control sequences out of 15000+600000
  414061 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,18n,74p,254b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,18n,74p,249b,438s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
@@ -475,10 +474,10 @@ type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb>
-Output written on problem3.pdf (3 pages, 106775 bytes).
+Output written on sat.pdf (3 pages, 106721 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 156 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
  31 named destinations out of 1000 (max. 500000)
  14 words of extra memory for PDF output out of 10000 (max. 10000000)
 
