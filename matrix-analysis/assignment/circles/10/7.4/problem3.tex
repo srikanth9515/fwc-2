@@ -26,13 +26,12 @@
 %New macro definitions
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 \providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \let\vec\mathbf
 
-\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
-\providecommand{\abs}[1]{\left\vert#1\right\vert}
-\let\vec\mathbf
 
 \begin{document}
 
@@ -139,7 +138,7 @@ Since $\vec{u} = -\vec{c}$ ,
 \end{align}
 Therefore, the equation of the circle is 
 \begin{align}
-	\norm{\vec{x}}^2 + 2\myvec{-3 & 2}\vec{x} - 12 = 0 
+	\norm{\vec{x}-\myvec{3 \\ -2}}  = 5 
 \end{align}
 The relevant diagram is shown in Figure \ref{fig:Fig1}
 \begin{figure}[!h]
