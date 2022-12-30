@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from numpy import linalg as LA
-
+import math
 
 import sys                                          #for path to external scripts
 sys.path.insert(0,'/sdcard/Download/sat/CoordGeo')
@@ -26,13 +26,9 @@ b = np.array(([-58,-72,-18]))
 A = np.block([[6,-14,1],[12,-12,1],[6,6,1]])
 #Solution vector
 O = LA.solve(A,b)
-
-
-
-#Centre and radius
-c = np.array(([3,-2]))
-r = 5
-
+#Centre and radius calculations
+c = -np.array((O[0],O[1]))
+r = math.sqrt(LA.norm(c)**2 - O[2])
 
 ##Generating the circle
 x_circ= circ_gen(c,r)
