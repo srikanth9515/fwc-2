@@ -4,11 +4,7 @@ import matplotlib.pyplot as plt
 from numpy import linalg as LA
 from math import *
 
-import sys, os                                          #for path to external scripts
-#script_dir = os.path.dirname(__file__)
-#lib_relative = '../../../CoordGeo'
-#fig_relative = '../figs/fig1.pdf'
-#sys.path.insert(0,os.path.join(script_dir, lib_relative))
+import sys                                          #for path to external scripts
 sys.path.insert(0,'/sdcard/Download/sat/CoordGeo')
 
 #local imports
@@ -38,9 +34,7 @@ def affine_transform(P,c,x):
 V = np.array([[0,0],[0,1]])
 u = np.array(([-6,0]))
 f = 0
-#V = np.array([[0.5,-0.5],[-0.5,0.5]])
-#u = np.array(([-7/np.sqrt(2),-5/np.sqrt(2)]))
-#f = 13
+
 lamda,P = LA.eigh(V)
 if(lamda[1] == 0):      # If eigen value negative, present at start of lamda 
     lamda = np.flip(lamda)
@@ -84,17 +78,16 @@ p = np.array([affine_transform(P,center,p_std[i,:]) for i in range(0,num_points)
 
 # Generating lines after transforming points
 x_AB = line_gen(A,B)
-#x_AO = line_gen(A,O)
-#x_BO = line_gen(B,O)
 x_direct_AB = line_gen(direct_A, direct_B)
 x_parAxis_AB = line_gen(parAxis_A, parAxis_B)
+
 #Plotting all shapes
-plt.plot(x_AB[0,:],x_AB[1,:])
-#plt.plot(x_AO[0,:],x_AO[1,:])
-#plt.plot(x_BO[0,:],x_BO[1,:])
-plt.plot(x_direct_AB[0,:],x_direct_AB[1,:])
-plt.plot(x_parAxis_AB[0,:],x_parAxis_AB[1,:])
-plt.plot(p[0,:], p[1,:])
+leg_label = "{} {}".format("Latus", "Rectum")
+plt.plot(x_AB[0,:],x_AB[1,:] ,label = leg_label)
+plt.plot(x_direct_AB[0,:],x_direct_AB[1,:], label ='$Directrix$')
+leg_label = "{} {}".format("Parabola", "Axis")
+plt.plot(x_parAxis_AB[0,:],x_parAxis_AB[1,:],label= leg_label)
+plt.plot(p[0,:], p[1,:],label ='$Parabola$')
 
 
 #Labeling the coordinates
@@ -106,14 +99,15 @@ for i, txt in enumerate(vert_labels):
     plt.annotate(label, # this is the text
                  (plot_coords[0,i], plot_coords[1,i]), # this is the point to label
                  textcoords="offset points", # how to position the text
-                 xytext=(15,5), # distance from text to points (x,y)
+                 xytext=(18,5), # distance from text to points (x,y)
                  ha='center') # horizontal alignment can be left, right or center
 
 plt.xlabel('$x$')
 plt.ylabel('$y$')
+plt.legend(loc='best', fontsize = 'small')
 plt.grid() # minor
 plt.axis('equal')
-
+plt.title('Parabola')
 #if using termux
 plt.savefig('../figs/problem1.pdf')
 #subprocess.run(shlex.split("termux-open '../figs/problem1.pdf'")) 
