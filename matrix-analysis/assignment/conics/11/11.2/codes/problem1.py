@@ -102,6 +102,13 @@ for i, txt in enumerate(vert_labels):
                  xytext=(18,5), # distance from text to points (x,y)
                  ha='center') # horizontal alignment can be left, right or center
 
+label = "{}{:.0f}".format("x = ", c) #Form label as A(x,y)
+plt.annotate(label, # this is the text
+             (plot_coords[0,2]-8, plot_coords[1,2]+2), # this is the point to label
+             textcoords="offset points", # how to position the text
+             xytext=(18,5), # distance from text to points (x,y)
+             rotation = 90,
+             ha='center') # horizontal alignment can be left, right or center
 plt.xlabel('$x$')
 plt.ylabel('$y$')
 plt.legend(loc='best', fontsize = 'small')
