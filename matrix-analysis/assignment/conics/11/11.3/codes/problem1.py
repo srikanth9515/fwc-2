@@ -105,7 +105,7 @@ plot_coords = np.vstack((A,B,C,D,F1,F2,O,G,H,I,J)).T
 #plt.scatter(plot_coords[0,:], plot_coords[1,:])
 vert_labels = ['A','B','C','D','F1','F2','O','G','H','I','J']
 for i, txt in enumerate(vert_labels):
-    label = "{}({:.1f},{:.1f})".format(txt, plot_coords[0,i],plot_coords[1,i]) #Form label as A(x,y)
+    label = "{}".format(txt ) #Form label as A(x,y)
     plt.scatter(plot_coords[0,:], plot_coords[1,:],label=label, s=15)
 #    plt.annotate(label, # this is the text
 #                (plot_coords[0,i], plot_coords[1,i]), # this is the point to label
