@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from numpy import linalg as LA
 from math import *
+import matplotlib.cm as cm
+import matplotlib.legend as Legend
 
 import sys                                          #for path to external scripts
 sys.path.insert(0,'/sdcard/Download/sat/CoordGeo')
@@ -100,27 +102,27 @@ plt.plot(x_lr2_CD[0,:],x_lr2_CD[1,:] ,label = leg_label)
 
 #Labeling the coordinates
 plot_coords = np.vstack((A,B,C,D,F1,F2,O,G,H,I,J)).T
-plt.scatter(plot_coords[0,:], plot_coords[1,:])
+#plt.scatter(plot_coords[0,:], plot_coords[1,:])
 vert_labels = ['A','B','C','D','F1','F2','O','G','H','I','J']
 for i, txt in enumerate(vert_labels):
     label = "{}({:.1f},{:.1f})".format(txt, plot_coords[0,i],plot_coords[1,i]) #Form label as A(x,y)
-    plt.annotate(label, # this is the text
-                (plot_coords[0,i], plot_coords[1,i]), # this is the point to label
-                 textcoords="offset points", # how to position the text
-                 xytext=(18,5), # distance from text to points (x,y)
-                 fontsize=7,
-                 ha='center') # horizontal alignment can be left, right or center
+    plt.scatter(plot_coords[0,:], plot_coords[1,:],label=label, s=15)
+#    plt.annotate(label, # this is the text
+#                (plot_coords[0,i], plot_coords[1,i]), # this is the point to label
+#                 textcoords="offset points", # how to position the text
+#                 xytext=(18,5), # distance from text to points (x,y)
+#                 fontsize=7,
+#                 ha='center') # horizontal alignment can be left, right or center
 
 plt.xlabel('$x$')
 plt.ylabel('$y$')
-plt.legend(loc='best', prop={'size':6})
+
+plt.gca().legend(loc='lower left', prop={'size':6},bbox_to_anchor=(0.93,0.5))
 plt.grid() # minor
+
 plt.axis('equal')
 plt.title('Ellipse')
 #if using termux
 plt.savefig('../figs/problem1.pdf')
-#subprocess.run(shlex.split("termux-open '../figs/problem1.pdf'")) 
-#plt.savefig(d$os.path.join(script_dir, fig_relative))
-#subprocess.run(shlex.split("termux-open "+os.path.join(script_dir, fig_relative)))
 #else
-#plt.show()
+plt.show()
