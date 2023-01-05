@@ -101,23 +101,30 @@ plt.plot(x_lr2_CD[0,:],x_lr2_CD[1,:] ,label = leg_label)
 
 
 #Labeling the coordinates
-plot_coords = np.vstack((A,B,C,D,F1,F2,O,G,H,I,J)).T
-#plt.scatter(plot_coords[0,:], plot_coords[1,:])
-vert_labels = ['A','B','C','D','F1','F2','O','G','H','I','J']
+plot_coords = np.vstack((F1,F2,H,G)).T
+vert_labels = ['$F_1$','$F_2$','$V_1$','$V_2$']
 for i, txt in enumerate(vert_labels):
-    label = "{}".format(txt ) #Form label as A(x,y)
-    plt.scatter(plot_coords[0,:], plot_coords[1,:],label=label, s=15)
-#    plt.annotate(label, # this is the text
-#                (plot_coords[0,i], plot_coords[1,i]), # this is the point to label
-#                 textcoords="offset points", # how to position the text
-#                 xytext=(18,5), # distance from text to points (x,y)
-#                 fontsize=7,
-#                 ha='center') # horizontal alignment can be left, right or center
+    if ( i == 0) :
+      label = "{}".format("F_1 - Focus 1" )
+    elif ( i == 1) :
+      label = "{}".format("F_2 - Focus 2" )
+    elif ( i == 2) :
+      label = "{}".format("V_1 - Vertex 1" )
+    else :
+      label = "{}".format("V_2 - Vertex 2" )
+
+    plt.scatter(plot_coords[0,i], plot_coords[1,i], s=15, label = label)
+    plt.annotate(txt, # this is the text
+                (plot_coords[0,i], plot_coords[1,i]), # this is the point to label
+                 textcoords="offset points", # how to position the text
+                 xytext=(8,5), # distance from text to points (x,y)
+                 fontsize=7,
+                 ha='center') # horizontal alignment can be left, right or center
 
 plt.xlabel('$x$')
 plt.ylabel('$y$')
 
-plt.gca().legend(loc='lower left', prop={'size':6},bbox_to_anchor=(0.93,0.5))
+plt.gca().legend(loc='lower left', prop={'size':6},bbox_to_anchor=(0.93,0.6))
 plt.grid() # minor
 
 plt.axis('equal')
