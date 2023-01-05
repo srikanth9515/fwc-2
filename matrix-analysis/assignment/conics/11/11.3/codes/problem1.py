@@ -105,13 +105,13 @@ plot_coords = np.vstack((F1,F2,H,G)).T
 vert_labels = ['$F_1$','$F_2$','$V_1$','$V_2$']
 for i, txt in enumerate(vert_labels):
     if ( i == 0) :
-      label = "{}".format("F_1 - Focus 1" )
+      label = "{}".format('$F_1 - Focus 1$' )
     elif ( i == 1) :
-      label = "{}".format("F_2 - Focus 2" )
+      label = "{}".format('$F_2 - Focus 2$' )
     elif ( i == 2) :
-      label = "{}".format("V_1 - Vertex 1" )
+      label = "{}".format('$V_1 - Vertex 1$' )
     else :
-      label = "{}".format("V_2 - Vertex 2" )
+      label = "{}".format('$V_2 - Vertex 2$' )
 
     plt.scatter(plot_coords[0,i], plot_coords[1,i], s=15, label = label)
     plt.annotate(txt, # this is the text
