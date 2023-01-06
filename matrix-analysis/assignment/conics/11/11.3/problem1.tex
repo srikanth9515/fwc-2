@@ -73,36 +73,12 @@ From equation \eqref{eq:eqV}, since $\vec{V}$ is already diagonalized, the Eigen
 	\label{eq:eqEigen2}
 	\lambda_2 &= 9 
 \end{align}
-The Eigen vector $\vec{p_1}$ corresponding to Eigen value $\lambda_1$ is computed as shown below
+Since the given matrix is diagonal, the Eigen Vector matrix will be identity. It is given as
 \begin{align}
-	\vec{V} &= \myvec{ 4 & 0 \\ 0 & 9} \\
-	\label{eq:eqLambda1}
-	\vec{V}-\lambda_1\vec{I} &= \myvec{ 4 - \lambda_1 & 0 \\ 0 & 9-\lambda_1} 
+	\vec{P} &= \myvec{ \vec{p_1} & \vec{p_2}} \\
+	&= \myvec{ 1 & 0 \\ 0 & 1}
 \end{align}
-Substituting value of $\lambda_1$ from \eqref{eq:eqEigen1} in \eqref{eq:eqLambda1}
-\begin{align}
-	\eqref{eq:eqLambda1} \implies  \myvec{  0 & 0 \\ 0 & 5}  \\
-	\myvec{  0 & 0 \\ 0 & 5}\myvec{x_1 \\ x_2} &= \myvec{0 \\0} 
-\end{align}
-$x_1$ is free variable and $x_2 = 0$. \\
-\begin{align}
-	\therefore \vec{p_1} &= \myvec{1 \\ 0}
-\end{align}
-The Eigen vector $\vec{p_2}$ corresponding to Eigen value $\lambda_2$ is computed as shown below
-\begin{align}
-	\vec{V} &= \myvec{ 4 & 0 \\ 0 & 9} \\
-	\label{eq:eqLambda2}
-	\vec{V}-\lambda_2\vec{I} &= \myvec{ 4 - \lambda_2 & 0 \\ 0 & 9-\lambda_1} 
-\end{align}
-Substituting value of $\lambda_2$ from \eqref{eq:eqEigen2} in \eqref{eq:eqLambda2}
-\begin{align}
-	\eqref{eq:eqLambda2} \implies  \myvec{ -5 & 0 \\ 0 & 0}  \\
-	\myvec{  -5 & 0 \\ 0 & 0}\myvec{x_1 \\ x_2} &= \myvec{0 \\0} 
-\end{align}
-$x_2$ is free variable and $x_1 = 0$. \\
-\begin{align}
-	\therefore \vec{p_2} &= \myvec{0 \\ 1}
-\end{align}
+
 \begin{enumerate}
 \item The eccentricity of the ellipse is given as  
 \begin{align}
@@ -136,7 +112,7 @@ The focus $\vec{F}$ of ellipse is expressed as
 \item  The length of the major axis $2a$ is given by
 \begin{align}
 	\label{eq:majorLength}
-	& 2\sqrt{\abs{\frac{f_0}{\lambda_1}}}\\
+	& 2\sqrt{\abs{\frac{f_0}{\lambda_1}}}
 \end{align}
 where
 \begin{align}
